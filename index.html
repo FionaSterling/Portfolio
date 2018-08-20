@@ -1,11 +1,183 @@
-﻿
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: timesnewroman;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 60px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+font-size: 14pt;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: white;
+    color: #1abc9c;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #fbf050;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #1abc9c; color: white;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* For rotating the image of me...please work! */
+.rotateimg90 {
+  -webkit-transform:rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+</style>
+</head>
 <body>
 
-<h1>My First Heading</h1>
+<div class="header">
+  <h1>Fiona Sterling</h1>
+  <p style=font-size:16pt>Coding Temple Python + Data Science Bootcamp, Boston</p>
+</div>
 
-<p>My first paragraph.</p>
+<div class="navbar">
+  <a href="https://codingtemple.com/coding-temple-boston/">Coding Temple Boston</a>
+  <a href="https://www.w3schools.com/html/">Learn HTML</a>
+  <a href="https://www.w3schools.com/css/default.asp">Learn CSS</a>
+  <a href="ContactMe.htm" class="right">Contact</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>About Me</h2>
+      <h3>Here I am:</h3><br><br>
+ <img src="Fiona.jpg" alt="Fiona Sterling" class="rotateimg90" style="height:200px"><br><br><br>
+ 
+<h3>Hobbies:</h3>
+      <p style=font-size:14pt>Here are some of my favorite things...</p>
+     
+<ul style=font-size:14pt>
+<li>Coaching gymnastics (and especially doing it myself!)</li><br>
+     
+      <li>Visiting Maine (the <i>best state</i>)</li><br>
+     
+      <li>Myers-Briggs (I'm an ISTJ...Find out yours <a href="http://www.humanmetrics.com/cgi-win/jtypes2.asp">here</a>)</li><br>    
+      
+      <li>Traveling</li><br>
+      
+      <li>Anything involving animals!</li></ul>
+  </div>
+
+  <div class="main">
+      <h2>BACKGROUND</h2>
+      <img src="Boothbay.jpg" alt="Boothbay Harbor, Maine" style="width:100%">
+      <p style=font-size:16pt>My name is Fiona Sterling. I'm from a small town in Maine originally, but moved to Massachusetts in 2012 for college. I attended Hellenic College in Brookline, majoring in Management and Leadership. From there, I went on to Lesley University to get my Master's in Education. I worked at a small, private elementary school last year as a floating teacher. On the side, I also coach gymnastics, which is one of my favorite things to do! I teach recreational classes and coach team. I've been coaching gymnastics for around 5 years now.</p>
+      <br>
+      <h2>WHY I WANT TO BE A WEB DEVELOPER</h2>
+      <img src="AboutMe.jpg" alt="About Me" style="width:100%">
+      <p style=font-size:16pt>Throughout college, I had a hard time figuring out what career I wanted to do. I majored in Management and Leadership because I thought it would give me a solid background for whatever career path I chose. I got my Master's in Education, thinking that classroom teaching might be a good path for me since I loved coaching. I worked in elementary schools for two years, but I felt like I wasn't using my skills in the way I wanted. This past year I've been doing a lot of reflecting about what kinds of things are important to me when it comes to a job. I tend to be a very focused person, who when working on a project, can sit for hours without realizing any time has passed. I also realized that I like a challenge, and can really focus on the details of a task or a project. I decided that I wanted a career that there were opportunities in as well - an area that the demand was getting higher over time. I mentioned these things to people I am close to, and someone mentioned coding. I had worked with tech pretty minimally, so I didn't know if I would be able to do it. I started going through a bit of an online class for Python, and I discovered that it was actually quite enjoyable! I felt like I was really being challenged (and also doing something super cool!). So, now I'm here at Coding Temple to learn how to code and to (hopefully!) become a web developer. A year ago I could not have imagined this at all.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>2018</h2>
+</div>
 
 </body>
 </html>
